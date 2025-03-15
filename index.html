@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
         }
         .hero {
-            background: url('hero.jpg') no-repeat center center/cover;
+            background: url('https://source.unsplash.com/1600x900/?fashion,shoes') no-repeat center center/cover;
             color: white;
             padding: 100px 20px;
             text-align: center;
@@ -35,7 +35,14 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item" href="mens.html">Men's Shoes</a></li>
+                            <li><a class="dropdown-item" href="womens.html">Women's Shoes</a></li>
+                            <li><a class="dropdown-item" href="kids.html">Kids' Shoes</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -54,7 +61,7 @@
         <div class="row text-center">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="shoe1.jpg" class="card-img-top" alt="Shoe 1">
+                    <img src="https://source.unsplash.com/400x300/?sneakers" class="card-img-top" alt="Shoe 1">
                     <div class="card-body">
                         <h5 class="card-title">Classic Sneakers</h5>
                         <p class="card-text">$79.99</p>
@@ -63,7 +70,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="shoe2.jpg" class="card-img-top" alt="Shoe 2">
+                    <img src="https://source.unsplash.com/400x300/?running-shoes" class="card-img-top" alt="Shoe 2">
                     <div class="card-body">
                         <h5 class="card-title">Urban Runners</h5>
                         <p class="card-text">$89.99</p>
@@ -72,7 +79,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="shoe3.jpg" class="card-img-top" alt="Shoe 3">
+                    <img src="https://source.unsplash.com/400x300/?loafers" class="card-img-top" alt="Shoe 3">
                     <div class="card-body">
                         <h5 class="card-title">Elegant Loafers</h5>
                         <p class="card-text">$99.99</p>
