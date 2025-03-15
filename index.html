@@ -4,110 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veloire Shoes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
         }
         .hero {
             background: url('hero.jpg') no-repeat center center/cover;
             color: white;
-            padding: 50px 20px;
+            padding: 100px 20px;
+            text-align: center;
         }
         .cta-button {
-            display: inline-block;
             padding: 10px 20px;
             background-color: #ff5733;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
-        .featured-products {
-            padding: 20px;
-        }
-        .products {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .product {
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Veloire Shoes</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Veloire Shoes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-    <section class="hero" id="home">
+    <section class="hero">
         <h1>Step Into Style</h1>
         <p>Discover the latest trends in footwear with Veloire Shoes.</p>
-        <a href="#shop" class="cta-button">Shop Now</a>
+        <a href="shop.html" class="btn btn-danger">Shop Now</a>
     </section>
     
-    <section class="featured-products" id="shop">
-        <h2>Featured Collection</h2>
-        <div class="products">
-            <div class="product">
-                <img src="shoe1.jpg" alt="Shoe 1">
-                <h3>Classic Sneakers</h3>
-                <p>$79.99</p>
+    <section class="container mt-5">
+        <h2 class="text-center">Featured Collection</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="shoe1.jpg" class="card-img-top" alt="Shoe 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Sneakers</h5>
+                        <p class="card-text">$79.99</p>
+                    </div>
+                </div>
             </div>
-            <div class="product">
-                <img src="shoe2.jpg" alt="Shoe 2">
-                <h3>Urban Runners</h3>
-                <p>$89.99</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="shoe2.jpg" class="card-img-top" alt="Shoe 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Urban Runners</h5>
+                        <p class="card-text">$89.99</p>
+                    </div>
+                </div>
             </div>
-            <div class="product">
-                <img src="shoe3.jpg" alt="Shoe 3">
-                <h3>Elegant Loafers</h3>
-                <p>$99.99</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="shoe3.jpg" class="card-img-top" alt="Shoe 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Elegant Loafers</h5>
+                        <p class="card-text">$99.99</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <footer>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2025 Veloire Shoes. All rights reserved.</p>
     </footer>
 </body>
