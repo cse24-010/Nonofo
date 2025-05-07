@@ -1,0 +1,60 @@
+<!-- movies.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies - CineWorld</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">CineWorld</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="movies.html">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Now Showing</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="images/galactic-odyssey.jpg" class="card-img-top" alt="Galactic Odyssey">
+          <div class="card-body">
+            <h5 class="card-title">Galactic Odyssey</h5>
+            <p class="card-text">An interstellar adventure that takes you beyond the stars. Stunning visuals and thrilling action await.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+          <img src="images/heartstrings.jpg" class="card-img-top" alt="Heartstrings">
+          <div class="card-body">
+            <h5 class="card-title">Heartstrings</h5>
+            <p class="card-text">A touching romantic drama exploring love, loss, and connection through time and music.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 CineWorld. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
