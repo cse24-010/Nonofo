@@ -1,29 +1,51 @@
-/* css/style.css */
+<!-- css/style.css -->
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8;
+  background-color: #f9f9f9;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+.hero {
+  background: url('../img/hero.jpg') center center/cover no-repeat;
+  color: white;
+  padding: 120px 20px;
 }
 
 .card {
-  border-radius: 1rem;
-  transition: transform 0.3s ease-in-out;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
-}
-
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-header {
-  background: linear-gradient(to right, #007bff, #6610f2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  font-size: 0.9rem;
+}
+
+nav a.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+form input, form select, form button {
+  border-radius: 8px;
+}
+
+form button {
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #333;
 }
