@@ -1,23 +1,23 @@
-<!-- index.html (Bootstrap Modern Version) -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CineWorld - Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">CineWorld</a>
+      <a class="navbar-brand" href="index.html">CineWorld</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
           <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
@@ -27,47 +27,34 @@
     </div>
   </nav>
 
-  <header class="bg-primary text-white text-center py-5">
-    <h1>Welcome to CineWorld</h1>
-    <p>Your favorite place for movies, tickets, and fun!</p>
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to CineWorld</h1>
+      <p class="lead">Your ultimate movie experience starts here.</p>
+    </div>
   </header>
 
-  <main class="container py-4">
-    <section class="row text-center">
+  <section class="container py-5">
+    <div class="row text-center">
       <div class="col-md-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Now Showing</h5>
-            <p class="card-text">Check out the latest blockbusters currently playing.</p>
-            <a href="movies.html" class="btn btn-outline-primary">View Movies</a>
-          </div>
-        </div>
+        <h3>Latest Movies</h3>
+        <p>Catch the latest blockbusters now showing at CineWorld.</p>
       </div>
       <div class="col-md-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Book Tickets</h5>
-            <p class="card-text">Reserve your seats online in a few easy steps.</p>
-            <a href="booking.html" class="btn btn-outline-success">Book Now</a>
-          </div>
-        </div>
+        <h3>Book Online</h3>
+        <p>Reserve your seats in advance and skip the lines.</p>
       </div>
       <div class="col-md-4">
-        <div class="card shadow">
-          <div class="card-body">
-            <h5 class="card-title">Contact Us</h5>
-            <p class="card-text">We’d love to hear from you. Reach out for help.</p>
-            <a href="contact.html" class="btn btn-outline-info">Get in Touch</a>
-          </div>
-        </div>
+        <h3>Special Discounts</h3>
+        <p>Enjoy weekly deals for students and families.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">&copy; 2025 CineWorld. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
