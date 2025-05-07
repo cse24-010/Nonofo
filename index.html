@@ -27,6 +27,7 @@
     </div>
   </nav>
 
+  <!-- Hero Header -->
   <header class="bg-light text-center py-5">
     <div class="container">
       <h1 class="display-4">Welcome to CineWorld</h1>
@@ -34,6 +35,28 @@
     </div>
   </header>
 
+  <!-- Carousel -->
+  <div id="movieCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/movie1.jpg" class="d-block w-100" alt="Movie 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/movie2.jpg" class="d-block w-100" alt="Movie 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/movie3.jpg" class="d-block w-100" alt="Movie 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Highlights -->
   <section class="container py-5">
     <div class="row text-center">
       <div class="col-md-4">
@@ -51,6 +74,69 @@
     </div>
   </section>
 
+  <!-- Featured Movies -->
+  <section class="container pb-5">
+    <h2 class="text-center mb-4">Featured Movies</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/movie4.jpg" class="card-img-top" alt="Movie 4">
+          <div class="card-body">
+            <h5 class="card-title">The Adventure Begins</h5>
+            <p class="card-text">An epic journey across distant lands and thrilling battles.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/movie5.jpg" class="card-img-top" alt="Movie 5">
+          <div class="card-body">
+            <h5 class="card-title">Romance in Paris</h5>
+            <p class="card-text">A heartwarming love story set in the city of lights.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/movie6.jpg" class="card-img-top" alt="Movie 6">
+          <div class="card-body">
+            <h5 class="card-title">Galactic War</h5>
+            <p class="card-text">A futuristic battle between galaxies—action-packed and intense.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">What Our Viewers Say</h2>
+      <blockquote class="blockquote">
+        <p class="mb-0">"CineWorld gives a truly unforgettable cinema experience!"</p>
+        <footer class="blockquote-footer">Anna K., <cite title="Source Title">movie lover</cite></footer>
+      </blockquote>
+      <blockquote class="blockquote mt-4">
+        <p class="mb-0">"Great atmosphere, amazing sound, and always clean theaters."</p>
+        <footer class="blockquote-footer">David M., <cite title="Source Title">frequent guest</cite></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Stay Updated</h2>
+    <form class="row justify-content-center">
+      <div class="col-md-6">
+        <input type="email" class="form-control mb-3" placeholder="Enter your email to get updates" required>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">&copy; 2025 CineWorld. All rights reserved.</p>
   </footer>
