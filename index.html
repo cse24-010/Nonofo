@@ -1,96 +1,51 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veloire Shoes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/1600x900/?fashion,shoes') no-repeat center center/cover;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-        .cta-button {
-            padding: 10px 20px;
-            background-color: #ff5733;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineWorld - Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Veloire Shoes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
-                            <li><a class="dropdown-item" href="mens.html">Men's Shoes</a></li>
-                            <li><a class="dropdown-item" href="womens.html">Women's Shoes</a></li>
-                            <li><a class="dropdown-item" href="kids.html">Kids' Shoes</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+  <header>
+    <img src="images/logo.png" alt="CineWorld Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-    
+  </header>
+  <main>
     <section class="hero">
-        <h1>Step Into Style</h1>
-        <p>Discover the latest trends in footwear with Veloire Shoes.</p>
-        <a href="shop.html" class="btn btn-danger">Shop Now</a>
+      <h1>Welcome to CineWorld</h1>
+      <p>Watch the latest blockbusters in high definition.</p>
     </section>
-    
-    <section class="container mt-5">
-        <h2 class="text-center">Featured Collection</h2>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Shoe 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Classic Sneakers</h5>
-                        <p class="card-text">$79.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1590673846749-e2fb8f655df8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Shoe 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Urban Runners</h5>
-                        <p class="card-text">$89.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1616406432452-07bc5938759d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Shoe 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Elegant Loafers</h5>
-                        <p class="card-text">$99.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="features">
+      <div>
+        <img src="images/movie1.jpg" alt="Movie Poster">
+        <h3>Now Showing</h3>
+        <p>Explore our current listings with the best movies in town.</p>
+      </div>
+      <div>
+        <img src="images/popcorn.jpg" alt="Snacks">
+        <h3>Snacks & Drinks</h3>
+        <p>Enjoy delicious snacks and drinks at our cinema lounge.</p>
+      </div>
+      <div>
+        <img src="images/theater.jpg" alt="Theater">
+        <h3>Luxury Experience</h3>
+        <p>Experience movies with our state-of-the-art theaters.</p>
+      </div>
     </section>
-    
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2025 Veloire Shoes. All rights reserved.</p>
-    </footer>
+  </main>
+  <footer>
+    <p>&copy; 2025 CineWorld. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
