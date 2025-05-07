@@ -1,0 +1,86 @@
+/* General Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Header Styling */
+header {
+  background-image: url('../images/cinema-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Section Headings */
+h2 {
+  font-weight: 700;
+  color: #343a40;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #f8f9fa !important;
+}
+
+/* Carousel Images */
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+}
+
+/* Card Styling */
+.card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Testimonials */
+blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+blockquote .blockquote-footer {
+  color: #888;
+}
+
+/* Newsletter Form */
+input[type="email"] {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+button[type="submit"] {
+  padding: 0.6rem;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 250px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
