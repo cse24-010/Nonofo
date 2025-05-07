@@ -7,7 +7,7 @@ body {
 
 /* Header Styling */
 header {
-  background-image: url('https://wallpapercave.com/wp/wp12544637.jpg');
+  background-image: url('https://wallpapercave.com/wp/wp12544637.jpg') !important;
   background-size: cover;
   background-position: center;
   color: white;
