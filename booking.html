@@ -1,0 +1,60 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking - CineWorld</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Book Your Tickets</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="bookingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="movie">Select Movie:</label>
+      <select id="movie" name="movie" required>
+        <option value="">--Choose--</option>
+        <option value="Galactic Odyssey">Galactic Odyssey</option>
+        <option value="Heartstrings">Heartstrings</option>
+      </select>
+
+      <label for="time">Showtime:</label>
+      <select id="time" name="time" required>
+        <option value="">--Choose--</option>
+        <option value="1:00 PM">1:00 PM</option>
+        <option value="4:00 PM">4:00 PM</option>
+        <option value="8:00 PM">8:00 PM</option>
+      </select>
+
+      <label for="tickets">Number of Tickets:</label>
+      <input type="number" id="tickets" name="tickets" min="1" max="10" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="confirmation" style="display:none; color:green; font-weight:bold;"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CineWorld. All rights reserved.</p>
+  </footer>
+</body>
+</html>
